@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "inter", sans-serif;
+  background-color: #000000;
+  color: #d9d9d9;
+}
+
+body main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.8fr 2fr 1fr;
+      grid-template-columns: 0.8fr 2fr 1fr;
+      grid-template-areas: "menu wall trends";
+}
+
+body main section {
+  min-height: 100vh;
+  border: 0px solid #2f3336;
+}
+
+body main .menu {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: menu;
+}
+
+body main .wall {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: wall;
+}
+
+body main .trends {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: trends;
+}
+
+body main .menu,
+body main .wall,
+body main .trends {
+  border-right-width: 1px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.d-flex-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.tweet-icon {
+  cursor: pointer;
+  margin: 0.5rem 0rem 1.5rem 1.7rem;
+  font-size: 2.5rem;
+}
+
+.tweet-icon:hover {
+  color: #0084ff;
+}
+
+.active {
+  color: #1da1f2 !important;
+}
+
+.primary-btn {
+  border-radius: 30px;
+  padding: 1rem 6rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #fff;
+  background-color: #1da1f2;
+}
+
+.primary-btn:hover {
+  background-color: #0084ff;
+}
+
+.menu nav {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu nav li {
+  cursor: pointer;
+  margin: 0 0 1rem;
+  -webkit-transition: hover 0.5s;
+  transition: hover 0.5s;
+}
+
+.menu nav li:hover a {
+  color: #1da1f2;
+}
+
+.menu nav li > a {
+  margin: 0 0 0 1rem;
+  color: #d9d9d9;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+.menu nav li > a > span {
+  vertical-align: middle;
+  font-size: 1.9rem;
+  margin: 0 0.8rem 0 0;
+}
+
+.menu .account {
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu .account .avatar {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.menu .account i {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.menu .account > div {
+  margin: 0 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu .account > div h3 {
+  font-size: 1rem;
+}
+
+.menu .account > div a {
+  font-size: 0.9rem;
+  color: #6e767d;
+}
+/*# sourceMappingURL=style.css.map */
