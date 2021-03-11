@@ -301,7 +301,7 @@ button {
   color: #6e767d;
   font-weight: 550;
   margin: 0 0 0.8rem 2rem;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .tweet-wall .tweet > span i {
@@ -392,6 +392,105 @@ button {
 
 .tweet-wall .tweet .tweet-structure > .tweet--content .icons a span {
   font-weight: 400;
-  font-size: .9rem;
+  font-size: 0.9rem;
+}
+
+.trends {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.trends .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.trends .wrapper .input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #15181c;
+  padding: 0.4rem 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 30px;
+  margin: 0 0 1rem;
+}
+
+.trends .wrapper .input-group input {
+  background-color: transparent;
+  border: 0;
+  padding: 0.5rem;
+  color: #d9d9d9;
+  letter-spacing: 0.3px;
+  caret-color: #1da1f2;
+}
+
+.trends .wrapper .input-group input:focus {
+  outline: 0;
+}
+
+.trends .wrapper .input-group i {
+  font-size: 1.2rem;
+  color: #6e767d;
+  vertical-align: middle;
+}
+
+.trends .wrapper .trending {
+  background-color: #15181c;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.trends .wrapper .trending h3 {
+  padding: 1rem;
+}
+
+.trends .wrapper .trending .trend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #2f3336;
+  padding: 1rem;
+}
+
+.trends .wrapper .trending .trend span {
+  font-size: .8rem;
+  color: #6e767d;
+}
+
+.trends .wrapper .trending .trend h4 {
+  font-size: 1rem;
+  margin: .2rem 0;
+}
+
+.trends .wrapper .trending .trend img {
+  border-radius: 10px;
+  height: 70px;
+}
+
+.trends .wrapper .trending .trend i {
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: #6e767d;
 }
 /*# sourceMappingURL=style.css.map */
