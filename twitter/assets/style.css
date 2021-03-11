@@ -60,7 +60,7 @@ a {
 
 button {
   cursor: pointer;
-  border: none;
+  border: 0;
 }
 
 .d-flex-col {
@@ -107,6 +107,27 @@ button {
 
 .primary-btn:hover {
   background-color: #0084ff;
+}
+
+.secondary-btn {
+  border-radius: 30px;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #dad6d6;
+  background-color: #187ca9;
+}
+
+.secondary-btn:hover {
+  background-color: #0084ff;
+  color: #fff;
+}
+
+.avatar {
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .menu nav {
@@ -156,11 +177,6 @@ button {
           justify-content: center;
 }
 
-.menu .account .avatar {
-  font-size: 2.5rem;
-  cursor: pointer;
-}
-
 .menu .account i {
   cursor: pointer;
   font-size: 1.5rem;
@@ -184,5 +200,198 @@ button {
 .menu .account > div a {
   font-size: 0.9rem;
   color: #6e767d;
+}
+
+.wall {
+  background-color: #15181c;
+}
+
+.wall header {
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #2f3336;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #000000;
+}
+
+.wall header i {
+  cursor: pointer;
+  color: #1da1f2;
+  font-size: 1.5rem;
+}
+
+.wall .tweet-here {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #000000;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #2f3336;
+}
+
+.wall .tweet-here .avatar {
+  margin: 0 0.5rem;
+}
+
+.wall .tweet-here .ini-tweet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0 0.5rem 0 0;
+}
+
+.wall .tweet-here .ini-tweet input {
+  padding: 1rem 0;
+  letter-spacing: 0.4px;
+  caret-color: #1da1f2;
+  border: 0;
+  background-color: transparent;
+  color: #d9d9d9;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: "inter", sans-serif;
+}
+
+.wall .tweet-here .ini-tweet input:focus {
+  outline: none;
+}
+
+.wall .tweet-here .ini-tweet div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wall .tweet-here .ini-tweet div .icons i {
+  cursor: pointer;
+  color: #1da1f2;
+  margin: 0 1rem 0 0;
+  font-size: 1.5rem;
+}
+
+.tweet-wall {
+  min-height: 80vh;
+  margin: 1rem 0 0;
+}
+
+.tweet-wall .tweet {
+  border-bottom: 1px solid #2f3336;
+  background-color: #000;
+  padding: 1rem;
+}
+
+.tweet-wall .tweet > span {
+  color: #6e767d;
+  font-weight: 550;
+  margin: 0 0 0.8rem 2rem;
+  font-size: .9rem;
+}
+
+.tweet-wall .tweet > span i {
+  vertical-align: middle;
+  font-size: 1.5rem;
+  margin: 0 0.5rem 0 0;
+}
+
+.tweet-wall .tweet .tweet-structure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tweet-wall .tweet .tweet-structure > .tweet--content {
+  margin: 0 0 0 0.5rem;
+}
+
+.tweet-wall .tweet .tweet-structure > .tweet--content .user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 0.5rem;
+}
+
+.tweet-wall .tweet .tweet-structure > .tweet--content .user-info a {
+  color: #d9d9d9;
+  font-weight: 600;
+}
+
+.tweet-wall .tweet .tweet-structure > .tweet--content .user-info a span {
+  color: #6e767d;
+  font-weight: 400;
+  margin: 0 0 0 0.2rem;
+}
+
+.tweet-wall .tweet .tweet-structure > .tweet--content .user-info a span sup {
+  margin: 0 0.2rem;
+}
+
+.tweet-wall .tweet .tweet-structure > .tweet--content .user-info a:hover {
+  color: #187ca9;
+}
+
+.tweet-wall .tweet .tweet-structure > .tweet--content .user-info i {
+  color: #6e767d;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.tweet-wall .tweet .tweet-structure > .tweet--content .user-info i:hover {
+  color: #187ca9;
+}
+
+.tweet-wall .tweet .tweet-structure > .tweet--content p {
+  margin: 0 0 1rem;
+}
+
+.tweet-wall .tweet .tweet-structure > .tweet--content .icons {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tweet-wall .tweet .tweet-structure > .tweet--content .icons a {
+  color: #6e767d;
+}
+
+.tweet-wall .tweet .tweet-structure > .tweet--content .icons a:hover {
+  color: #187ca9;
+}
+
+.tweet-wall .tweet .tweet-structure > .tweet--content .icons a i {
+  font-size: 1.3rem;
+  vertical-align: middle;
+  margin: 0 0.5rem 0 0;
+}
+
+.tweet-wall .tweet .tweet-structure > .tweet--content .icons a span {
+  font-weight: 400;
+  font-size: .9rem;
 }
 /*# sourceMappingURL=style.css.map */

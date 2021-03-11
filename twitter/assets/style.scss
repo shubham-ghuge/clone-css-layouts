@@ -14,6 +14,7 @@ body {
   font-family: "inter", sans-serif;
   background-color: $black;
   color: $grey;
+  // overflow: hidden;
   main {
     display: grid;
     grid-template-columns: 0.8fr 2fr 1fr;
@@ -51,7 +52,7 @@ a {
 }
 button {
   cursor: pointer;
-  border: none;
+  border: 0;
 }
 // utilities
 .d-flex-col {
@@ -86,6 +87,24 @@ button {
   &:hover {
     background-color: $hover-blue;
   }
+}
+.secondary-btn {
+  border-radius: 30px;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: rgb(218, 214, 214);
+  background-color: $link-blue;
+  &:hover {
+    background-color: $hover-blue;
+    color: #fff;
+  }
+}
+.avatar {
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 // classes
 .menu {
@@ -122,10 +141,6 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    .avatar {
-      font-size: 2.5rem;
-      cursor: pointer;
-    }
     i {
       cursor: pointer;
       font-size: 1.5rem;
@@ -140,6 +155,141 @@ button {
       & a {
         font-size: 0.9rem;
         color: $icon-grey;
+      }
+    }
+  }
+}
+.wall {
+  background-color: $bg-grey;
+  header {
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid $border-color;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    i {
+      cursor: pointer;
+      color: $blue;
+      font-size: 1.5rem;
+    }
+  }
+  .tweet-here {
+    display: flex;
+    background-color: #000000;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid $border-color;
+    .avatar {
+      margin: 0 0.5rem;
+    }
+    .ini-tweet {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      margin: 0 0.5rem 0 0;
+      input {
+        padding: 1rem 0;
+        letter-spacing: 0.4px;
+        caret-color: $blue;
+        border: 0;
+        background-color: transparent;
+        color: $text-grey;
+        font-weight: 500;
+        font-size: 1rem;
+        font-family: "inter", sans-serif;
+        &:focus {
+          outline: none;
+        }
+      }
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .icons {
+          i {
+            cursor: pointer;
+            color: $blue;
+            margin: 0 1rem 0 0;
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+.tweet-wall {
+  min-height: 80vh;
+  margin: 1rem 0 0;
+  .tweet {
+    border-bottom: 1px solid $border-color;
+    background-color: #000;
+    padding: 1rem;
+    &>span{
+      color: $icon-grey;
+      font-weight: 550;
+      margin: 0 0 0.8rem 2rem;
+      font-size: .9rem;
+      i{
+        vertical-align: middle;
+        font-size: 1.5rem;
+        margin: 0 0.5rem 0 0;
+      }
+    }
+    .tweet-structure {
+      display: flex;
+      justify-content: space-between;
+      & > .tweet--content {
+        margin: 0 0 0 0.5rem;
+        .user-info {
+          display: flex;
+          justify-content: space-between;
+          margin: 0 0 0.5rem;
+          a {
+            color: $grey;
+            font-weight: 600;
+            span {
+              color: $icon-grey;
+              font-weight: 400;
+              margin: 0 0 0 0.2rem;
+              sup {
+                margin: 0 0.2rem;
+              }
+            }
+            &:hover{
+              color: $link-blue;
+            }
+          }
+          i{
+            color: $icon-grey;
+            cursor: pointer;
+            font-size: 1.5rem;
+            &:hover{
+              color: $link-blue;
+            }
+          }
+        }
+        p {
+          margin: 0 0 1rem;
+        }
+        .icons {
+          width: 80%;
+          display: flex;
+          justify-content: space-between;
+          a {
+            color: $icon-grey;
+            &:hover{
+              color: $link-blue;
+            }
+            i{
+              font-size: 1.3rem;
+              vertical-align: middle;
+              margin: 0 0.5rem 0 0;
+            }
+            span{
+              font-weight: 400;
+              font-size: .9rem;
+            }
+          }
+        }
       }
     }
   }
