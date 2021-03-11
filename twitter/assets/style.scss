@@ -14,7 +14,7 @@ body {
   font-family: "inter", sans-serif;
   background-color: $black;
   color: $grey;
-  // overflow: hidden;
+  overflow: hidden;
   main {
     display: grid;
     grid-template-columns: 0.8fr 2fr 1fr;
@@ -160,6 +160,8 @@ button {
   }
 }
 .wall {
+  height: 80vh;
+  overflow-y: scroll;
   background-color: $bg-grey;
   header {
     padding: 0.8rem 1rem;
@@ -217,7 +219,6 @@ button {
   }
 }
 .tweet-wall {
-  min-height: 80vh;
   margin: 1rem 0 0;
   .tweet {
     border-bottom: 1px solid $border-color;

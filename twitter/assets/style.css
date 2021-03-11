@@ -6,6 +6,7 @@ body {
   font-family: "inter", sans-serif;
   background-color: #000000;
   color: #d9d9d9;
+  overflow: hidden;
 }
 
 body main {
@@ -203,6 +204,8 @@ button {
 }
 
 .wall {
+  height: 80vh;
+  overflow-y: scroll;
   background-color: #15181c;
 }
 
@@ -287,7 +290,6 @@ button {
 }
 
 .tweet-wall {
-  min-height: 80vh;
   margin: 1rem 0 0;
 }
 
